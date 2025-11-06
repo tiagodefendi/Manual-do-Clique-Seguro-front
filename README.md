@@ -11,3 +11,4 @@ O Manual do Clique Seguro é um **Objeto de Aprendizagem** desenvolvido com intu
 - **Next.js**: Framework para construção de aplicações React com renderização do lado do servidor.
 - **TypeScript**: Linguagem de programação que adiciona tipagem estática ao JavaScript.
 - **React**: Biblioteca para construção de interfaces de usuário.
+- **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
