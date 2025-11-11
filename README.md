@@ -12,3 +12,4 @@ O Manual do Clique Seguro é um **Objeto de Aprendizagem** desenvolvido com intu
 - **TypeScript**: Linguagem de programação que adiciona tipagem estática ao JavaScript.
 - **React**: Biblioteca para construção de interfaces de usuário.
 - **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
+- **Supabase**: Plataforma que oferece autenticação.
