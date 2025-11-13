@@ -21,10 +21,10 @@ Requisitos de Apendizagem:
 - Entender os riscos de compartilhar informações pessoais online.
 
 Mapa Conceitual:
-- O Mapa Conceitual do Objeto de Aprendizagem pode ser visualizado [aqui](https://miro.com/app/board/uXjVM2pX1jU=/).
+- O Mapa Conceitual do Objeto de Aprendizagem pode ser visualizado [aqui](https://cmapscloud.ihmc.us/viewer/cmap/21XSF8KCB-2SHFCY-BP56L1).
 
 Modelo Instrucional:
-- O Modelo Instrucional do Objeto de Aprendizagem pode ser visualizado [aqui](https://miro.com/app/board/uXjVM2pX1jU=/).
+- O Modelo Instrucional do Objeto de Aprendizagem pode ser visualizado [aqui](https://drive.google.com/file/d/1do2nlK1ncjFqW222IG9ootDm0ZIjGhbW/view?usp=sharing).
 
 ## Tecnologias Utilizadas
 
