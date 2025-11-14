@@ -22,6 +22,7 @@ Requisitos de Apendizagem:
 
 Mapa Conceitual:
 - O Mapa Conceitual do Objeto de Aprendizagem pode ser visualizado [aqui](https://cmapscloud.ihmc.us/viewer/cmap/21XSF8KCB-2SHFCY-BP56L1).
+- O Mapa Conceitual de Cibersegurança pode ser visualizado [aqui](https://cmapscloud.ihmc.us/viewer/cmap/222K9RV4F-X9VGKX-M9XVSC).
 
 Modelo Instrucional:
 - O Modelo Instrucional do Objeto de Aprendizagem pode ser visualizado [aqui](https://drive.google.com/file/d/1do2nlK1ncjFqW222IG9ootDm0ZIjGhbW/view?usp=sharing).
