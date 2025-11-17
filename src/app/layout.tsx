@@ -49,7 +49,7 @@ function Header() {
             </Button>
           </Link>
 
-          <Link href="/registrar">
+          <Link href="/singup">
             <Button
               className="h-24 px-24 text-3xl font-semibold rounded-l-lg whitespace-nowrap"
             >
