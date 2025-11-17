@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import HeaderWithoutAuth from "@/components/home/header/HeaderWithoutAuth";
-import BaseFooter from "@/components/home/BaseFooter";
+import HeaderWithoutAuth from "@/components/headers/HeaderWithoutAuth";
+import BaseFooter from "@/components/footers/BaseFooter";
 
 export default function HomePage() {
   return (

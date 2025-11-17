@@ -1,3 +1,5 @@
+"use client";
+
 import BaseHeader from "./BaseHeader";
 import { logout } from "@/app/api/logout";
 
