@@ -17,41 +17,34 @@ export const metadata: Metadata = {
 // ------------------------------------------------------------
 function Header() {
   return (
-    <header className="w-full bg-gray-200 shadow-[0_4px_12px_rgba(0,0,0,0.1)] print:hidden mb-52">
-      <div className="container mx-auto flex flex-row justify-between items-center flex-wrap px-28 py-32 gap-20">
+    <header className="w-full bg-gray-200 shadow-sm print:hidden">
+      <div className="container mx-auto flex flex-row justify-between items-center flex-wrap px-4 py-4 gap-4">
 
         {/* LOGO + Início */}
-        <div className="flex flex-row items-center gap-16 flex-wrap">
+        <div className="flex flex-row items-center gap-4 flex-wrap">
           <Link
             href="/"
-            className="text-5xl font-bold text-blue-800 hover:text-blue-900 transition-colors"
+            className="text-xl md:text-2xl font-bold text-blue-800 hover:text-blue-900 transition-colors"
           >
             Manual do Clique Seguro
-          </Link>
-
-          <Link
-            href="/"
-            className="text-2xl text-gray-700 hover:text-blue-800 transition-colors px-8 py-5 rounded-xl hover:bg-gray-300 hidden md:inline-block"
-          >
-            Início
           </Link>
         </div>
 
         {/* Navegação (botões à direita) */}
-        <nav className="flex flex-row items-center gap-20">
+        <nav className="flex flex-row items-center gap-2 md:gap-4">
 
           <Link href="/login">
             <Button
               variant="outline"
-              className="h-24 px-20 text-3xl font-semibold rounded-l-lg whitespace-nowrap"
+              className="h-8 md:h-10 px-3 md:px-4 text-sm text-black md:text-base font-semibold rounded-full whitespace-nowrap"
             >
               Entrar
             </Button>
           </Link>
 
-          <Link href="/singup">
+          <Link href="/signup">
             <Button
-              className="h-24 px-24 text-3xl font-semibold rounded-l-lg whitespace-nowrap"
+              className="h-8 md:h-10 px-3 md:px-4 text-sm md:text-base font-semibold rounded-full whitespace-nowrap"
             >
               Registrar
             </Button>
@@ -69,12 +62,12 @@ function Header() {
 // ------------------------------------------------------------
 function Footer() {
   return (
-    <footer className="w-full bg-gray-900 text-gray-200 mt-72 print:hidden shadow-[inset_0_4px_8px_rgba(0,0,0,0.2)]">
-      <div className="container mx-auto px-20 text-center pt-40 pb-20">
-        <p className="text-xl">
+    <footer className="w-full bg-gray-900 text-gray-200 print:hidden shadow-inner">
+      <div className="container mx-auto px-4 py-6 text-center">
+        <p className="text-sm md:text-base">
           &copy; {new Date().getFullYear()} Manual do Clique Seguro.
         </p>
-        <p className="text-lg mt-6">
+        <p className="text-xs md:text-sm mt-1">
           Um projeto de Objeto de Aprendizagem focado na segurança digital da terceira idade.
         </p>
       </div>
@@ -83,7 +76,7 @@ function Footer() {
 }
 
 // ------------------------------------------------------------
-// ROOT LAYOUT (TEM QUE SER UM COMPONENTE)
+// ROOT LAYOUT
 // ------------------------------------------------------------
 export default function RootLayout({
   children,
@@ -95,10 +88,9 @@ export default function RootLayout({
       <body className={`${inter.className} flex flex-col min-h-screen bg-gray-50`}>
         <Header />
 
-        <main className="flex-grow container mx-auto px-28 pb-16 mt-40">
+        <main className="flex-grow container mx-auto px-4 py-6">
           {children}
         </main>
-
 
         <Footer />
       </body>
