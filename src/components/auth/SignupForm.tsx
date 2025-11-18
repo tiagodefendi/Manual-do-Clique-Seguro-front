@@ -15,6 +15,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 
+import { api } from "@/app/api/client";
+
 export function SignupForm() {
     const router = useRouter();
     const [email, setEmail] = useState("");
@@ -27,29 +29,21 @@ export function SignupForm() {
         setLoading(true);
 
         if (password !== confirmPassword) {
-            toast.error("As senhas não coincidem");
+            toast.error("As senhas nao coincidem");
             setLoading(false);
             return;
         }
 
         try {
-            const res = await fetch("http://localhost:3001/auth/signup", {
+            const data = await api("/auth/signup", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password }),
             });
 
-            const data = await res.json();
-
-            if (!res.ok) {
-                toast.error(data.message ?? "Erro ao criar conta");
-                return;
-            }
-
             toast.success("Conta criada com sucesso!");
             router.push("/login");
-        } catch (error) {
-            toast.error("Erro inesperado. Tente novamente.");
+        } catch (error: any) {
+            toast.error(error.message || "Erro inesperado");
             console.error(error);
         } finally {
             setLoading(false);

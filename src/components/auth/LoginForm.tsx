@@ -15,6 +15,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 
+import { api } from "@/app/api/client";
+
 export function LoginForm() {
     const router = useRouter();
     const [email, setEmail] = useState("");
@@ -26,24 +28,26 @@ export function LoginForm() {
         setLoading(true);
 
         try {
-            const res = await fetch("http://localhost:3001/auth/login", {
+            const data = await api("/auth/login", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password }),
             });
 
-            const data = await res.json();
-
-            if (!res.ok) {
-                toast.error(data.message ?? "Email ou senha incorretos");
+            let accessToken = data.session?.access_token;
+            if (!accessToken) {
+                toast.error("Token nao recebido da API");
                 return;
             }
+
+            document.cookie = `token=${accessToken}; path=/; max-age=86400;`;
+            localStorage.setItem("token", accessToken);
+            window.location.href = "/dashboard";
 
             toast.success("Login realizado com sucesso!");
 
             router.push("/dashboard");
-        } catch (error) {
-            toast.error("Erro inesperado. Tente novamente.");
+        } catch (error: any) {
+            toast.error(error.message || "Erro inesperado");
             console.error(error);
         } finally {
             setLoading(false);
@@ -61,7 +65,6 @@ export function LoginForm() {
 
             <CardContent>
                 <form onSubmit={handleSubmit} className="grid gap-4">
-
                     <div className="grid gap-2">
                         <Label htmlFor="email">Email</Label>
                         <Input
