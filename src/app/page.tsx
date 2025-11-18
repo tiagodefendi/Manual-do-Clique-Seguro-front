@@ -1,48 +1,52 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import HeaderWithoutAuth from "@/components/headers/HeaderWithoutAuth";
+import BaseFooter from "@/components/footers/BaseFooter";
 
 export default function HomePage() {
   return (
-    <div className="w-full py-40 mt-32 mb-40">
+    <div className="flex flex-col min-h-screen bg-gray-50">
+      <HeaderWithoutAuth />
 
-      {/* ---------- DUAS DIVS LADO A LADO ---------- */}
-      <div className="container mx-auto px-28 flex flex-row items-center justify-between gap-40">
+      <main className="flex-grow w-full py-20 px-4 md:px-6 flex flex-col items-center">
 
-        {/* ESQUERDA (div menor dentro da maior + espaçamento interno) */}
-        <div className="w-1/2 flex flex-col justify-center items-start mx-auto max-w-[600px] gap-12 py-10">
-          <h1 className="text-6xl font-bold text-blue-800 leading-tight">
-            Manual do Clique Seguro
-          </h1>
+        {/* Hero */}
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16">
+          {/* Esquerda */}
+          <div className="w-full md:w-1/2 flex flex-col justify-center items-start max-w-lg md:max-w-md gap-6 md:gap-8">
+            <h1 className="text-3xl md:text-5xl font-bold text-blue-800 leading-tight md:leading-snug">
+              Manual do Clique Seguro
+            </h1>
+            <p className="text-base md:text-xl text-gray-700 leading-relaxed md:leading-loose">
+              Um guia simples e prático criado para ajudar idosos a navegarem pela internet
+              com mais segurança, evitando golpes, fraudes e riscos digitais.
+            </p>
+          </div>
 
-          <p className="text-2xl text-gray-700 leading-relaxed">
-            Um guia simples e prático criado para ajudar idosos a navegarem pela internet
-            com mais segurança, evitando golpes, fraudes e riscos digitais.
-          </p>
+          {/* Direita */}
+          <div className="w-full md:w-1/2 flex justify-center py-6 md:py-0">
+            <Image
+              src="/segurança-digital.jpeg"
+              width={500}
+              height={400}
+              alt="Imagem representando segurança digital"
+              className="rounded-3xl shadow-lg w-full max-w-md md:max-w-lg h-auto"
+            />
+          </div>
         </div>
 
-        {/* DIREITA */}
-        <div className="flex justify-center w-1/2 py-10">
-          <Image
-            src="/segurança-digital.jpeg"
-            width={400}
-            height={300}
-            alt="Imagem representando segurança digital"
-            className="rounded-3xl shadow-lg max-w-[350px] h-auto"
-          />
+        {/* Botão */}
+        <div className="flex justify-center mt-12 md:mt-20">
+          <Link href="/dashboard">
+            <Button className="h-14 md:h-16 px-8 md:px-12 text-lg md:text-2xl font-semibold rounded-full">
+              Começar
+            </Button>
+          </Link>
         </div>
+      </main>
 
-      </div>
-
-      {/* ---------- BOTÃO EMBAIXO ---------- */}
-      <div className="flex justify-center mt-40">
-        <Link href="/inicio">
-          <Button className="h-24 px-24 text-3xl font-semibold rounded-2xl">
-            Começar
-          </Button>
-        </Link>
-      </div>
-
+      <BaseFooter />
     </div>
   );
 }
