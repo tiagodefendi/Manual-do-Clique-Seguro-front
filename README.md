@@ -27,10 +27,47 @@ Mapa Conceitual:
 Modelo Instrucional:
 - O Modelo Instrucional do Objeto de Aprendizagem pode ser visualizado [aqui](https://drive.google.com/file/d/1do2nlK1ncjFqW222IG9ootDm0ZIjGhbW/view?usp=sharing).
 
+Repositório de Documentação:
+- O Repositório de Documentação do Objeto de Aprendizagem pode ser visualizado [aqui](https://github.com/tiagodefendi/Manual-do-Clique-Seguro).
+
+## Como usar o Objeto de Aprendizagem
+
+Para utilizar o Manual do Clique Seguro, siga os passos abaixo:
+
+### Pré-requisitos
+- Node.js
+- npm ou yarn
+
+### Instalação
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/tiagodefendi/Manual-do-Clique-Seguro-front.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd Manual-do-Clique-Seguro-front
+    ```
+3. Instale as dependências:
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
+4. Configure as variáveis de ambiente:
+    - Copie o arquivo `.env.example` para `.env`:
+        ```bash
+        cp .env.example .env
+        ```
+5. Inicie o servidor:
+    ```bash
+    npm run dev
+    # ou
+    yarn dev
+    ```
+
 ## Tecnologias Utilizadas
 
 - **Next.js**: Framework para construção de aplicações React com renderização do lado do servidor.
 - **TypeScript**: Linguagem de programação que adiciona tipagem estática ao JavaScript.
 - **React**: Biblioteca para construção de interfaces de usuário.
 - **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
-- **Supabase**: Plataforma que oferece autenticação.
