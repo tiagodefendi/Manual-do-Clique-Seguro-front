@@ -1,0 +1,126 @@
+{
+  "general": {
+    "identifier": {
+      "catalog": "URI",
+      "entry": "https://github.com/tiagodefendi/Manual-do-Clique-Seguro"
+    },
+    "title": {
+      "lang": "pt-BR",
+      "value": "Manual de Segurança Digital"
+    },
+    "language": [
+      "pt-BR"
+    ],
+    "description": {
+      "lang": "pt-BR",
+      "value": "Um guia interativo e prático sobre segurança cibernética, abordando criação de senhas, prevenção de fraudes e navegação segura."
+    },
+    "keyword": [
+      {
+        "lang": "pt-BR",
+        "value": "segurança da informação"
+      },
+      {
+        "lang": "pt-BR",
+        "value": "prevenção de fraudes"
+      },
+      {
+        "lang": "pt-BR",
+        "value": "educação digital"
+      }
+    ],
+    "coverage": {
+      "lang": "pt-BR",
+      "value": "Brasil, 2000-2025"
+    },
+    "structure": "hierarchical",
+    "aggregationLevel": 3
+  },
+  "lifecycle": {
+    "version": {
+      "lang": "pt-BR",
+      "value": "1.0"
+    },
+    "status": "final",
+    "contribute": [
+      {
+        "role": "author",
+        "entity": "Tiago Defendi da Silva",
+        "date": "2025-12-16"
+      },
+      {
+        "role": "author",
+        "entity": "Thiago Riemma Carbonera",
+        "date": "2025-12-16"
+      }
+    ]
+  },
+  "technical": {
+    "format": [
+      "text/html",
+      "image/png",
+      "application/pdf"
+    ],
+    "location": "https://github.com/tiagodefendi/Manual-do-Clique-Seguro",
+    "requirement": {
+      "orComposite": {
+        "type": "browser",
+        "name": "any",
+        "minimumVersion": "latest"
+      }
+    },
+    "otherPlatformRequirements": {
+      "lang": "pt-BR",
+      "value": "Requer conexão com a internet."
+    }
+  },
+  "educational": {
+    "learningResourceType": "guide",
+    "interactivityType": "mixed",
+    "interactivityLevel": "medium",
+    "semanticDensity": "low",
+    "typicalAgeRange": {
+      "lang": "pt-BR",
+      "value": "18+"
+    },
+    "difficulty": "easy",
+    "typicalLearningTime": "PT2H0M",
+    "description": {
+      "lang": "pt-BR",
+      "value": "Material de consulta e auto-instrução para usuários leigos."
+    },
+    "language": [
+      "pt-BR"
+    ],
+    "context": {
+      "lang": "pt-BR",
+      "value": "Ensino a Distância / Autoaprendizagem"
+    }
+  },
+  "rights": {
+    "cost": "no",
+    "copyrightAndOtherRestrictions": "yes",
+    "description": {
+      "lang": "pt-BR",
+      "value": "MIT License"
+    }
+  },
+  "classification": {
+    "purpose": "discipline",
+    "taxonPath": [
+      {
+        "source": {
+          "lang": "x-none",
+          "value": "LOMv1.0"
+        },
+        "taxon": {
+          "id": "04",
+          "entry": {
+            "lang": "pt-BR",
+            "value": "Ciência da Computação"
+          }
+        }
+      }
+    ]
+  }
+}
