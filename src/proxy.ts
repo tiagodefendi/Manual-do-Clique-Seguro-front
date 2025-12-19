@@ -7,7 +7,8 @@ export function proxy(request: NextRequest) {
     const token = request.cookies.get("token")?.value;
 
     // Rotas privadas
-    const privateRoutes = ["/dashboard"];
+    const privateRoutes = ["/aaaa"];
+    // const privateRoutes = ["/dashboard"];
 
     const isPrivate = privateRoutes.some((route) =>
         url.pathname.startsWith(route)
