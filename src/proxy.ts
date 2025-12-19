@@ -23,5 +23,5 @@ export function proxy(request: NextRequest) {
 
 // Habilita o proxy para rotas especificas
 export const config = {
-    matcher: ["/dashboard/:path*"],
+    // matcher: ["/dashboard/:path*"],
 };
